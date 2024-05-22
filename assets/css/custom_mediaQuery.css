@@ -1,0 +1,116 @@
+/* For screens between 320px and 425px */
+@media only screen and (min-width: 320px) {
+  /* CSS styles for screens between 320px and 425px */
+  .chk_icon {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 222px;
+  }
+
+  .refresh_btn{
+    margin-top: 27px;
+  }
+
+  .phoneNo_send{
+    margin-top: 22px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .chk_icon {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 275px;
+  }
+  .refresh_btn{
+    margin-top: 31px;
+  }
+
+  .phoneNo_send{
+    margin-top: 28px;
+  }
+
+}
+
+
+@media only screen and (min-width: 425px) {
+  .chk_icon {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 324px;
+  }
+
+  .refresh_btn{
+    margin-top: 28px;
+  }
+  
+}
+
+/* For screens between 426px and 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+  /* CSS styles for screens between 426px and 768px */
+  .refresh_btn{
+    margin-top: 31px;
+  }
+
+  .phoneNo_OTP{
+    margin-top: 24px;
+  }
+  .phoneNo_send{
+    margin-top: 27px;
+  }
+
+
+
+}
+
+/* For screens between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* CSS styles for screens between 769px and 1024px */
+  .chk_icon {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 248px;
+  }
+
+  .phoneNo_send{
+    margin-top: 28px;
+  }
+
+  .refresh_btn{
+    margin-top: 30px;
+  }
+
+  
+  .phoneNo_OTP{
+    margin-top: 28px;
+  }
+
+
+}
+
+/* For screens between 1025px and 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* CSS styles for screens between 1025px and 1440px */
+  .chk_icon {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 355px;
+  }
+
+  .phoneNo_send{
+    margin-top: 27px;
+  }
+
+  .refresh_btn{
+    margin-top: 24px;
+  }
+
+  
+  .phoneNo_OTP{
+    margin-top: 24px;
+  }
+
+
+
+}

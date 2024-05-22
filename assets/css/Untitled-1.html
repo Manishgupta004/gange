@@ -1,0 +1,153 @@
+/* Extra small devices (phones) */
+/* @media (max-width: 319.98px) {
+    .chk_icon {
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 213px;
+    }
+
+  } */
+
+
+/* Extra small devices (phones) */
+@media (min-width: 575.98px) and  {
+
+    .chk_icon {
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 222px;
+    }
+
+    #refresh_btn{
+        margin-top: 30px;
+    }
+
+    #phoneNo_send{
+        margin-top: 20px;  
+    }
+
+  }
+  
+  /* Small devices (tablets) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    /* Your CSS rules for small screens (sm) */
+    /* .chk_icon {
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 426px;
+    } */
+
+  }
+  
+  /* Medium devices (desktops, laptops) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Your CSS rules for medium screens (md) */
+  }
+  
+  /* Large devices (desktops, laptops) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Your CSS rules for large screens (lg) */
+  
+  }
+  
+  /* Extra large devices (large desktops, TVs) */
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* Your CSS rules for extra large screens (xl) */
+#phoneNo_send{
+   margin-top: 23px; 
+}
+#send_email_btn{
+    margin-top: 23px;
+}
+
+#refresh_btn{
+    margin-top: 27px; 
+}
+.chk_icon {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 356px;
+}
+
+#phoneNo_OTP{
+    margin-top: 24px;
+}
+
+  }
+  
+  /* Extra extra large devices (larger desktops, high-res monitors) */
+  @media (min-width: 1400px) {
+    /* Your CSS rules for extra extra large screens (xxl) */
+  }
+  
+
+<!-- Include Font Awesome for the checkmark icon -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<!-- Your form control with the checkmark icon -->
+<div class="form-group">
+  <label for="exampleInput">Example Input</label>
+  <input type="text" class="form-control" id="exampleInput" placeholder="Enter something">
+  <i class="fas fa-check-circle valid-feedback" style="display: none;"></i>
+  <div class="invalid-feedback">Please provide a valid input.</div>
+</div>
+
+<script>
+document.getElementById('exampleInput').addEventListener('input', function() {
+  var input = this;
+  var feedbackIcon = input.nextElementSibling;
+  
+  // Check if input is valid
+  if (input.checkValidity()) {
+    // Show the checkmark icon
+    feedbackIcon.style.display = 'inline';
+    feedbackIcon.classList.add('text-success');
+    // Hide the invalid feedback message
+    input.classList.remove('is-invalid');
+  } else {
+    // Hide the checkmark icon
+    feedbackIcon.style.display = 'none';
+    feedbackIcon.classList.remove('text-success');
+    // Show the invalid feedback message
+    input.classList.add('is-invalid');
+  }
+});
+</script>
+
+
+//
+<form id="myForm">
+  <div class="form-group">
+    <label for="exampleInput">Example Input</label>
+    <input type="text" class="form-control" id="exampleInput" placeholder="Enter something">
+    <div class="valid-feedback">Success! Your input is valid.</div>
+    <div class="invalid-feedback">Please provide a valid input.</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script>
+document.getElementById('myForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+  
+  // Perform AJAX request
+  // For demonstration purposes, let's simulate a successful AJAX request after 2 seconds
+  setTimeout(function() {
+    // Add success state to the input field
+    var input = document.getElementById('exampleInput');
+    input.classList.remove('is-invalid'); // Remove any existing invalid state
+    input.classList.add('is-valid'); // Add success state
+    
+    // Optionally, display a success message
+    var successMessage = input.nextElementSibling; // Get the valid-feedback element
+    successMessage.style.display = 'block'; // Show the success message
+    
+    // Reset the form after 3 seconds (you can remove this if not needed)
+    setTimeout(function() {
+      document.getElementById('myForm').reset(); // Reset the form
+      input.classList.remove('is-valid'); // Remove success state
+      successMessage.style.display = 'none'; // Hide the success message
+    }, 3000);
+  }, 2000);
+});
+</script>
